@@ -45,5 +45,4 @@ type First<T extends any[]> = T[0] extends T[number] ? T[0] : never;
 type head1 = First<arr1>; // expected to be 'a'
 type head2 = First<arr2>; // expected to be 3
 type head3 = First<arr3>; // expected to be never
-
 ```
